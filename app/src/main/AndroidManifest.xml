@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="fclPlugin"
+            android:value="true" />
+
+        <meta-data
+            android:name="des"
+            android:value="OpenLTW" />
+
+        <meta-data
+            android:name="renderer"
+            android:value="LTW:libltw.so:libltw.so" />
+
+        <meta-data
+            android:name="pojavEnv"
+            android:value="LIBGL_ES=3:POJAV_RENDERER=opengles3_ltw" />
+        <meta-data
+            android:name="boatEnv"
+            android:value="" />
+
+    </application>
+
+</manifest>
