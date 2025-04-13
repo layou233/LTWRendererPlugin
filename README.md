@@ -20,6 +20,12 @@ Pre-built APKs are provided in Release. In case you want to build it by yourself
 ./gradlew :app:assembleRelease
 ```
 
+If you get `make (e=206)` error on Windows, try adding this to art/ltw/src/main/tinywrapper/Application.mk:
+
+```
+APP_SHORT_COMMANDS := true
+```
+
 ## Credit
 
 - artDev & [LTW](https://github.com/artdeell/LTW): The upstream repo.
