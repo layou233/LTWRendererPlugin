@@ -4,14 +4,14 @@ plugins {
 
 android {
     namespace 'com.launium.ltwplugin'
-    compileSdk 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId "com.launium.ltwplugin"
         minSdk 21
-        targetSdk 35
-        versionCode 3
-        versionName "1.0.2"
+        targetSdk 36
+        versionCode 4
+        versionName "1.0.3"
         setProperty("archivesBaseName", 'LTWPlugin-' + versionName)
 
         externalNativeBuild {
@@ -45,10 +45,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    ndkVersion = "25.2.9519653"
+    ndkVersion = "28.2.13676358"
     externalNativeBuild {
         ndkBuild {
             path file('../art/ltw/src/main/tinywrapper/Android.mk')
+        }
+    }
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
         }
     }
 }
