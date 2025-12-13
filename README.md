@@ -28,8 +28,6 @@ APP_SHORT_COMMANDS := true
 
 ## Credit
 
-- artDev & [LTW](https://github.com/artdeell/LTW): The upstream repo.
+- artDev & Mojo Launcher Team & [LTW](https://github.com/MojoLauncher/LTW): The upstream repo
 - [FCLRendererPlugin](https://github.com/FCL-Team/FCLRendererPlugin): R.I.P
 - The launcher community
-
-I personally wish artDev all the best in his future work and life. Your past work and contributions are invaluable to the community.
